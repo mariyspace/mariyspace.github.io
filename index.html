@@ -1,51 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mari Huallpa Cardenas | Personal Website</title>
+  <title>Mari Huallpa Cardenas | Página personal</title>
+  <meta name="description" content="Página personal de Mari Huallpa Cardenas, estudiante de Administración de Empresas en la Universidad Católica San Pablo. Un espacio sobre sus intereses, fotografías, lecturas y música.">
+  <meta name="author" content="Mari Huallpa Cardenas">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mariyspace.github.io/">
 
-    <meta name="description" content="Página personal de Mari Huallpa Cardenas. Un espacio para compartir mis intereses, ideas y proyectos.">
+  <meta property="og:title" content="Mari Huallpa Cardenas">
+  <meta property="og:description" content="Un pequeño espacio sobre mí, mis intereses, fotografías y música.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mariyspace.github.io/">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Mari Huallpa Cardenas",
+      "url": "https://mariyspace.github.io/",
+      "description": "Estudiante de Administración de Empresas en la Universidad Católica San Pablo."
+    }
+  }
+  </script>
 </head>
 
 <body>
 
-    <header>
-        <h1>Mari Huallpa Cardenas</h1>
-        <p>Personal website · 2026</p>
-    </header>
+  <header class="topbar">
+    <a class="logo" href="#inicio">m<span>.</span></a>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#intereses">Intereses</a>
+      <a href="#fotografia">Fotografía</a>
+      <a href="#musica">Música</a>
+    </nav>
+    <a class="contact-link" href="#contacto">Contacto ↗</a>
+  </header>
 
-    <main>
-        <section>
-            <h2>Welcome to my space.</h2>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <p class="eyebrow">✳ UN PEQUEÑO ESPACIO EN INTERNET</p>
+        <h1>Hola, soy<br><span>Mari Huallpa</span><br>Cardenas.</h1>
+        <p class="hero-description">
+          Un rincón donde guardo un poquito de las cosas que me gustan,
+          los momentos que capturo y todo aquello que me inspira.
+        </p>
+        <a class="primary-button" href="#sobre-mi">Conóceme un poquito <span>↓</span></a>
+      </div>
 
-            <p>
-                Un pequeño espacio digital donde comparto
-                mis intereses, ideas y proyectos.
-            </p>
-        </section>
+      <div class="hero-art">
+        <div class="hero-photo">
+          <img src="fotos/portada.jpg" alt="Fotografía personal de Mari">
+          <span class="photo-note">a little piece of me ♡</span>
+        </div>
+        <span class="floating-star star-one">✳</span>
+        <span class="floating-star star-two">✧</span>
+        <span class="floating-note">collecting<br>little moments</span>
+      </div>
+    </section>
 
-        <section>
-            <h2>About me</h2>
-            <p>
-                Soy estudiante de Administración de Empresas.
-                Me interesan los negocios, las finanzas,
-                la lectura y el aprendizaje constante.
-            </p>
-        </section>
+    <div class="ticker">
+      <span>READING ✳ PHOTOGRAPHY ✳ MUSIC ✳ BAKING ✳ MOVIES ✳ LITTLE MOMENTS ✳</span>
+    </div>
 
-        <section>
-            <h2>Interests</h2>
-            <p>Reading · Business · Finance · Art · Design</p>
-        </section>
-    </main>
+    <section class="about section" id="sobre-mi">
+      <div class="section-heading">
+        <p class="eyebrow">01 / UN POCO SOBRE MÍ</p>
+        <h2>Detrás de esta<br><em>página...</em></h2>
+      </div>
 
-    <footer>
-        <p>© 2026 Mari Huallpa Cardenas</p>
-    </footer>
+      <div class="about-content">
+        <p class="about-intro">
+          Soy Mari, estudiante de Administración de Empresas en la
+          <strong>Universidad Católica San Pablo.</strong>
+        </p>
+        <p>
+          Me gusta descubrir historias entre libros, preparar algo dulce,
+          escuchar música y encontrar belleza en los pequeños detalles.
+          Disfruto las películas, las series y la fotografía; especialmente
+          esos momentos cotidianos que merecen quedarse un poquito más.
+        </p>
+        <p class="handwritten">Un día a la vez, siempre descubriendo algo nuevo ♡</p>
+      </div>
+    </section>
+
+    <section class="interests section" id="intereses">
+      <div class="section-heading centered">
+        <p class="eyebrow">02 / COSAS QUE ME GUSTAN</p>
+        <h2>Mis pequeños <em>universos</em></h2>
+        <p class="section-subtitle">Algunas de las cosas que hacen mis días más interesantes.</p>
+      </div>
+
+      <div class="interest-grid">
+        <article class="interest-card lavender">
+          <span class="card-number">01</span>
+          <span class="interest-icon">📖</span>
+          <h3>Entre libros</h3>
+          <p>Misterio, suspenso, crímenes y esas historias que no me dejan soltar el libro.</p>
+          <span class="card-decoration">one more chapter...</span>
+        </article>
+
+        <article class="interest-card pink">
+          <span class="card-number">02</span>
+          <span class="interest-icon">🍰</span>
+          <h3>Un toque dulce</h3>
+          <p>La repostería, experimentar recetas y disfrutar el proceso de crear algo rico.</p>
+          <span class="card-decoration">made with love</span>
+        </article>
+
+        <article class="interest-card yellow">
+          <span class="card-number">03</span>
+          <span class="interest-icon">🎧</span>
+          <h3>Mi banda sonora</h3>
+          <p>Música para cada momento, desde canciones que podría escuchar mil veces hasta nuevos descubrimientos.</p>
+          <span class="card-decoration">press play ♡</span>
+        </article>
+
+        <article class="interest-card blue">
+          <span class="card-number">04</span>
+          <span class="interest-icon">🎬</span>
+          <h3>En pantalla</h3>
+          <p>Películas y series que me hacen reír, pensar y encariñarme con sus historias.</p>
+          <span class="card-decoration">just one more episode</span>
+        </article>
+
+        <article class="interest-card green">
+          <span class="card-number">05</span>
+          <span class="interest-icon">📷</span>
+          <h3>Mirar con atención</h3>
+          <p>Me gusta capturar lugares, detalles y momentos que llaman mi atención.</p>
+          <span class="card-decoration">through my lens</span>
+        </article>
+
+        <article class="interest-card peach">
+          <span class="card-number">06</span>
+          <span class="interest-icon">✿</span>
+          <h3>Siempre aprendiendo</h3>
+          <p>Curiosidad por conocer cosas nuevas, explorar ideas y seguir construyendo mi camino.</p>
+          <span class="card-decoration">in progress...</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="photography section" id="fotografia">
+      <div class="section-heading">
+        <p class="eyebrow">03 / MI GALERÍA PERSONAL</p>
+        <h2>A través de<br><em>mi lente.</em></h2>
+        <p class="section-subtitle">Pequeños momentos, lugares y detalles que quise guardar.</p>
+      </div>
+
+      <div class="photo-grid">
+        <figure class="photo-tall">
+          <img src="fotos/foto-1.jpg" alt="Fotografía tomada por Mari, primera imagen">
+          <figcaption>01 — little details</figcaption>
+        </figure>
+        <figure>
+          <img src="fotos/foto-2.jpg" alt="Fotografía tomada por Mari, segunda imagen">
+          <figcaption>02 — somewhere</figcaption>
+        </figure>
+        <figure>
+          <img src="fotos/foto-3.jpg" alt="Fotografía tomada por Mari, tercera imagen">
+          <figcaption>03 — a moment</figcaption>
+        </figure>
+        <figure class="photo-wide">
+          <img src="fotos/foto-4.jpg" alt="Fotografía tomada por Mari, cuarta imagen">
+          <figcaption>04 — the little things</figcaption>
+        </figure>
+      </div>
+      <p class="gallery-note">Todas las fotografías de esta sección serán tuyas. ♡</p>
+    </section>
+
+    <section class="music section" id="musica">
+      <div class="music-copy">
+        <p class="eyebrow">04 / LO QUE ESTOY ESCUCHANDO</p>
+        <h2>Un poquito de<br><em>mi mundo musical.</em></h2>
+        <p>Hay canciones que terminan convirtiéndose en parte de nuestros recuerdos. Aquí estará una playlist muy mía.</p>
+        <span class="music-doodle">♫ ♪ ♡</span>
+      </div>
+
+      <div class="playlist-card">
+        <div class="playlist-cover">
+          <span>my<br>favorite<br>sounds ♡</span>
+          <span class="cover-decoration">♫</span>
+        </div>
+        <div class="playlist-info">
+          <p class="eyebrow">A PLAYLIST BY MARI</p>
+          <h3>En repeat</h3>
+          <p>Una colección de canciones que me acompañan.</p>
+          <div class="spotify-placeholder">
+            <span>🎵</span>
+            <p>Aquí irá mi playlist de Spotify.</p>
+            <small>Próximamente ♡</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="academic section">
+      <p class="eyebrow">05 / MI CAMINO ACADÉMICO</p>
+      <h2>Aprendiendo y<br><em>construyendo.</em></h2>
+      <div class="academic-card">
+        <span class="academic-icon">✳</span>
+        <div>
+          <p class="eyebrow">UNIVERSIDAD</p>
+          <h3>Universidad Católica San Pablo</h3>
+          <p>Administración de Empresas</p>
+        </div>
+        <span class="academic-year">UCSP</span>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <p class="eyebrow">06 / HASTA AQUÍ, POR AHORA</p>
+      <h2>Gracias por<br>pasar por <em>mi espacio.</em></h2>
+      <p>Este pequeño rincón seguirá creciendo conmigo.</p>
+      <a class="primary-button" href="mailto:">Escríbeme ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#inicio">m<span>.</span></a>
+    <p>Hecho con cariño por Mari · 2026</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
 
 </body>
 </html>
