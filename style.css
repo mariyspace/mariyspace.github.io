@@ -310,6 +310,29 @@ a {
 }
 
 /* ==============================
+   CURSOS DEL SEMESTRE
+================================= */
+
+.courses-list {
+  display: grid;
+  gap: 18px;
+}
+
+.courses-list .education-info a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.courses-list .education-info a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* ==============================
    INTERESES
 ================================= */
 
@@ -502,64 +525,6 @@ a.link-item:hover {
 }
 
 /* ==============================
-   COMPAÑEROS DE CLASE
-================================= */
-
-.classmates-section {
-  margin-top: 65px;
-}
-
-.classmates-heading {
-  padding: 35px 0 22px;
-  border-bottom: 1px solid var(--border);
-}
-
-.classmates-heading h3 {
-  margin: 8px 0;
-  font-family: var(--serif);
-  font-size: 1.7rem;
-  font-weight: 500;
-}
-
-.classmates-heading p {
-  color: var(--muted);
-  font-size: 0.88rem;
-}
-
-.classmates-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0 28px;
-}
-
-.classmate-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 19px 8px;
-  border-bottom: 1px solid var(--border);
-  transition: padding 0.3s ease, background 0.3s ease;
-}
-
-.classmate-link:hover {
-  padding-left: 16px;
-  background: rgba(238, 233, 243, 0.45);
-}
-
-.classmate-link h4 {
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  font-weight: 500;
-}
-
-.classmate-link span {
-  color: var(--accent-dark);
-  font-size: 1.1rem;
-  flex-shrink: 0;
-}
-
-/* ==============================
    PIE DE PÁGINA
 ================================= */
 
@@ -724,14 +689,6 @@ a.link-item:hover {
   .link-status {
     max-width: 100px;
     text-align: right;
-  }
-
-  .classmates-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .classmates-section {
-    margin-top: 45px;
   }
 
   .footer-content {
